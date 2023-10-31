@@ -8,27 +8,35 @@
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ip Adress Tracker - Front-end Mentor</title>
+  <title>Rastreador de CEP - Front-end Mentor</title>
 </head>
 <body>
   <header>
-    <h1>IP Address Tracker</h1>
-    <input placeholder="Search for any IP address or domain" type="number" name="ip" id="ip">
+    <h1>Rastreador de CEP</h1>
+    <div class="input-ip">
+      <input placeholder="Digite o CEP" type="number" name="ip" id="ip">
+      <button></button>
+    </div>
     <div class="data-container">
       <div class="ip-address">
-        <h2>IP ADDRESS</h2>
+        <h2>LOGRADOURO</h2>
+        <span></span>
       </div>
       <div class="location">
-        <h2>LOCATION</h2>
+        <h2>BAIRRO</h2>
+        <span></span>
       </div>
       <div class="timezone">
-        <h2>TIMEZONE</h2>
+        <h2>CIDADE</h2>
+        <span></span>
       </div>
       <div class="isp">
-        <h2>ISP</h2>
+        <h2>ESTADO</h2>
+        <span></span>
       </div>
     </div>
   </header>
   <section class="map"></section>
+  <script src="script.js"></script>
 </body>
 </html>

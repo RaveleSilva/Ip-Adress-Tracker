@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body{
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
+  background-color: rgb(179, 179, 179);
+}
+
+header{
+  background-image: url(images/pattern-bg-desktop.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  gap: 40px;
+}
+
+header h1{
+  color: white;
+  font-weight: 500;
+}
+
+.input-ip{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+.input-ip input{
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 20px 0px 0px 20px;
+  border: none;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  width: 40%;
+}
+
+.input-ip input::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+}
+
+.input-ip input::before{
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+.input-ip button{
+  height: 100%;
+  width: 60px;
+  border: none;
+  border-radius: 0px 20px 20px 0px;
+  background-image: url(images/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.input-ip button:hover{
+  background-color: rgb(35, 35, 35);
+}
+
+.data-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 80%;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin-bottom: -85px;
+  z-index: 1;
+  gap: 20px;
+}
+
+.data-container h2{
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: hsl(0, 0%, 59%);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.data-container span{
+  color: hsl(0, 0%, 17%);
+  font-size: 20px;
+  font-weight: 500;
+  max-width: 4ch;
+}
+
+.data-container > div{
+  position: relative;
+}
+
+.data-container > div:not(:first-child){
+  border-left: 1.5px solid rgb(222, 222, 222);
+  padding-left: 20px;
+}
